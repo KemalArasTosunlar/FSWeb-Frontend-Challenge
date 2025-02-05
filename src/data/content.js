@@ -77,8 +77,8 @@ export const projects = [
     id: 3,
     title: 'WitFlix',
     description: {
-      en: 'Netflix like movie streaming webiste.',
-      tr: 'Netflix benzeri film izleme sitesi.'
+      en: 'Netflix like movie streaming website. My very first clone website:)',
+      tr: 'Netflix benzeri film izleme sitesi. İlk klon projem:)'
     },
     image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b',
     tags: ['HTML', 'CSS', 'JavaScript'],
