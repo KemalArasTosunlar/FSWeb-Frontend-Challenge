@@ -43,7 +43,7 @@ export const Profile = () => {
         </div>
         
         <div>
-          <h3 className="text-xl text-[#4731D3] font-medium mb-8"> {language === 'en' ? 'About Me' : 'Hakkımda'}</h3>
+          <h3 className="text-xl text-[#4731D3] font-medium mb-8">{sectionLabels[language].aboutMe}</h3>
           <div className="space-y-4">
             {profile.about[language].map((paragraph, index) => (
               <p key={index} className="text-gray-600 leading-relaxed">
