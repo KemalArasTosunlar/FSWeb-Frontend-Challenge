@@ -35,6 +35,16 @@ export const profile = {
   workExperience: {
     en: 'Senior Developer at XYZ Tech (2018-Present)',
     tr: 'XYZ Tech Kıdemli Geliştirici (2018-Günümüz)'
+  },
+  about: {
+    en: [
+      "I am a passionate developer with a love for creating efficient and scalable applications.",
+      "I enjoy working with modern technologies and continuously learning new skills."
+    ],
+    tr: [
+      "Verimli ve ölçeklenebilir uygulamalar oluşturmayı seven tutkulu bir geliştiriciyim.",
+      "Modern teknolojilerle çalışmayı ve sürekli yeni beceriler öğrenmeyi seviyorum."
+    ]
   }
 };
 
@@ -48,7 +58,8 @@ export const projects = [
     },
     image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
     tags: ['React', 'Node', 'API'],
-    demoUrl: '#'
+    demoUrl: '#',
+    githubUrl: 'https://github.com/yourusername/workintech' // Add GitHub URL
   },
   {
     id: 2,
@@ -59,7 +70,8 @@ export const projects = [
     },
     image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1',
     tags: ['React', 'API', 'Jest'],
-    demoUrl: '#'
+    demoUrl: '#',
+    githubUrl: 'https://github.com/yourusername/random-jokes' // Add GitHub URL
   },
   {
     id: 3,
@@ -70,6 +82,7 @@ export const projects = [
     },
     image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b',
     tags: ['React', 'Maps', 'API'],
-    demoUrl: '#'
+    demoUrl: '#',
+    githubUrl: 'https://github.com/yourusername/journey' // Add GitHub URL
   }
 ];

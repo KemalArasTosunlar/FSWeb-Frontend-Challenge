@@ -32,6 +32,14 @@ export const Projects = () => {
               >
                 {language === 'en' ? 'View Site' : 'Siteyi Görüntüle'}
               </a>
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-600 dark:text-purple-400 hover:underline ml-4"
+              >
+                GitHub
+              </a>
             </div>
           </div>
         ))}
