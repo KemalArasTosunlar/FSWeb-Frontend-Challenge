@@ -1,6 +1,6 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
-import { profile } from '../data/content';
+import { profile, sectionLabels } from '../data/content';
 
 export const Profile = () => {
   const { language } = useApp();
@@ -14,10 +14,10 @@ export const Profile = () => {
 
   return (
     <section className="py-16 px-6">
-      <h2 className="text-3xl font-bold mb-12">Profile</h2>
+      <h2 className="text-3xl font-bold mb-12">{sectionLabels[language].profile}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
-          <h3 className="text-xl text-[#4731D3] font-medium mb-8">Profile</h3>
+          <h3 className="text-xl text-[#4731D3] font-medium mb-8">{sectionLabels[language].profile}</h3>
           <div className="space-y-6">
             <p>
               <span className="font-bold">{labels.birthDate[language]}</span>
@@ -43,7 +43,7 @@ export const Profile = () => {
         </div>
         
         <div>
-          <h3 className="text-xl text-[#4731D3] font-medium mb-8">About Me</h3>
+          <h3 className="text-xl text-[#4731D3] font-medium mb-8"> {language === 'en' ? 'About Me' : 'Hakkımda'}</h3>
           <div className="space-y-4">
             {profile.about[language].map((paragraph, index) => (
               <p key={index} className="text-gray-600 leading-relaxed">
@@ -53,7 +53,7 @@ export const Profile = () => {
           </div>
         </div>
       </div>
+      <hr style={{ borderColor: '#BAB2E7', borderWidth: '1px', borderStyle: 'solid' }} className="my-8" />
     </section>
-
   );
 };

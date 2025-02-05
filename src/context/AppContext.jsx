@@ -1,10 +1,17 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const [language, setLanguage] = useState('en');
+  const browserLanguage = navigator.language || navigator.userLanguage;
+  const initialLanguage = browserLanguage.startsWith('tr') ? 'tr' : 'en';
+  
+  const [language, setLanguage] = useState(initialLanguage);
   const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+  }, [theme]);
 
   return (
     <AppContext.Provider value={{ language, setLanguage, theme, setTheme }}>
@@ -14,9 +21,5 @@ export const AppProvider = ({ children }) => {
 };
 
 export const useApp = () => {
-  const context = useContext(AppContext);
-  if (context === undefined) {
-    throw new Error('useApp must be used within an AppProvider');
-  }
-  return context;
+  return useContext(AppContext);
 };

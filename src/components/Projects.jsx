@@ -1,13 +1,13 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
-import { projects } from '../data/content';
+import { projects, sectionLabels } from '../data/content';
 
 export const Projects = () => {
   const { language } = useApp();
 
   return (
     <section className="py-12 px-6">
-      <h2 className="text-2xl font-bold mb-8">Projects</h2>
+      <h2 className="text-2xl font-bold mb-8">{sectionLabels[language].projects}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {projects.map((project) => (
           <div key={project.id} className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">

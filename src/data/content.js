@@ -33,8 +33,8 @@ export const profile = {
     tr: 'Abanat İzzet Baysal Üniversitesi |Uluslararası İlişkiler'
   },
   workExperience: {
-    en: 'Freelance Wep Developer (2018-Present)',
-    tr: 'Freelance Web Geliştirici (2018-Günümüz)'
+    en: 'Full-stack Developer (2024-Present)',
+    tr: 'Full-stack Developer (2018-Günümüz)'
   },
   about: {
     en: [
@@ -45,6 +45,21 @@ export const profile = {
       "Verimli ve ölçeklenebilir uygulamalar oluşturmayı seven tutkulu bir geliştiriciyim.",
       "Modern teknolojilerle çalışmayı ve sürekli yeni beceriler öğrenmeyi seviyorum."
     ]
+  }
+};
+
+export const sectionLabels = {
+  en: {
+    skills: 'Skills',
+    profile: 'Profile',
+    projects: 'Projects',
+    aboutMe: 'About Me'
+  },
+  tr: {
+    skills: 'Yetenekler',
+    profile: 'Profil',
+    projects: 'Projeler',
+    aboutMe: 'Hakkımda'
   }
 };
 

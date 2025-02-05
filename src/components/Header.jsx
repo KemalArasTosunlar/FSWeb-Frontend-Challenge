@@ -4,6 +4,12 @@ import { useApp } from '../context/AppContext';
 export const Header = () => {
   const { language, setLanguage, theme, setTheme } = useApp();
 
+  const labels = {
+    skills: { en: 'Skills', tr: 'Yetenekler' },
+    projects: { en: 'Projects', tr: 'Projeler' },
+    hireMe: { en: 'Hire Me', tr: 'Beni İşe Al' }
+  };
+
   return (
     <header className="py-8 px-6">
       <div className="flex justify-end items-center gap-4 mb-8">
@@ -18,7 +24,10 @@ export const Header = () => {
               } inline-block h-4 w-4 transform rounded-full bg-white transition`}
             />
           </button>
-          <span className="text-sm font-medium">DARK MODE</span>
+          {/* Burada butonun yanında yazıyı değiştirdim */}
+          <span className="text-sm font-medium">
+            {theme === 'dark' ? 'LIGHT MODE' : 'DARK MODE'}
+          </span>
         </div>
         <span className="text-gray-300">|</span>
         <button
@@ -38,14 +47,14 @@ export const Header = () => {
         <div className="flex items-center gap-8">
           <nav className="flex gap-8">
             <a href="#skills" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
-              Skills
+              {labels.skills[language]}
             </a>
             <a href="#projects" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
-              Projects
+              {labels.projects[language]}
             </a>
           </nav>
           <button className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">
-            Hire me
+            {labels.hireMe[language]}
           </button>
         </div>
       </div>
