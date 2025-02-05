@@ -71,7 +71,7 @@ export const projects = [
       en: 'A food ordering website built with React and Node.js.',
       tr: 'React ve Node.js ile geliştirilmiş yemek sipariş sitesi.'
     },
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
+    image: '../images/pizza-project-front.jpg',
     tags: ['React', 'Node', 'API'],
     demoUrl: 'https://s8-challamge-pizza-kemal.vercel.app/',
     githubUrl: 'https://github.com/KemalArasTosunlar/s8-challamge-pizza-kemal' 
@@ -83,7 +83,7 @@ export const projects = [
       en: 'Allows users to add their favorite movies, delete them. Also added dark mode.',
       tr: 'Kullanıcılara favori filmlerini ekleme ve silme imkanı sunan bir proje. Dark mode özelliğide bulunmakta'
     },
-    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1',
+    image: '../images/movie-database-2.jpg',
     tags: ['React', 'API', 'Axios'],
     demoUrl: 'https://movie-database-v3.vercel.app/movies',
     githubUrl: 'https://github.com/KemalArasTosunlar/movie-database-v3' 

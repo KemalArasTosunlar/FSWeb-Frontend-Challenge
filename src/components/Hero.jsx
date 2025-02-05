@@ -47,7 +47,7 @@ export const Hero = () => {
       </div>
       <div className="md:w-1/2 mt-8 md:mt-0">
         <img
-          src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a"
+          src="../images/temp-pp.jpg"
           alt="Profile"
           className="rounded-lg w-full max-w-md mx-auto"
         />
