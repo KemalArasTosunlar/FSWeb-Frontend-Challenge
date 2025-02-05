@@ -6,7 +6,7 @@ export const Skills = () => {
   const { language } = useApp();
 
   return (
-    <section className="py-16 px-6">
+    <section id="skills" className="py-16 px-6">
       <h2 className="text-3xl font-bold mb-12">{sectionLabels[language].skills}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-16 text-left">
         {skills.map((skill) => (
