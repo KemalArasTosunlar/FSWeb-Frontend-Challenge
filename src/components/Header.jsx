@@ -18,7 +18,7 @@ export const Header = () => {
               } inline-block h-4 w-4 transform rounded-full bg-white transition`}
             />
           </button>
-          <span className="text-sm font-medium">DARK MODE</span>
+          <span className="text-sm font-medium">{theme === 'dark' ? 'LIGHT MODE' : 'DARK MODE'}</span>
         </div>
         <span className="text-gray-300">|</span>
         <button
@@ -37,16 +37,10 @@ export const Header = () => {
         </div>
         <div className="flex items-center gap-8">
           <nav className="flex gap-8">
-            <a href="#skills" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">{language === 'en' ? 'Skills' : 'Yetenekler'}
-              
-            </a>
-            <a href="#projects" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">{language === 'en' ? 'Projects' : 'Projeler'}
-              
-            </a>
+            <a href="#skills" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">{language === 'en' ? 'Skills' : 'Yetenekler'}</a>
+            <a href="#projects" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">{language === 'en' ? 'Projects' : 'Projeler'}</a>
           </nav>
-          <button className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">{language === 'en' ? 'Hire Me' : 'Beni İşe Al'}
-            
-          </button>
+          <button className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">{language === 'en' ? 'Hire Me' : 'Beni İşe Al'}</button>
         </div>
       </div>
     </header>

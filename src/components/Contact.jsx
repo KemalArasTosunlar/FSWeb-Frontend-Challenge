@@ -15,7 +15,7 @@ export const Contact = () => {
           </h2>
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <span className="text-yellow-400">✉</span>
+              <span className="text-yellow-400">👉</span>
               <a
                 href="mailto:kemaltosunlar@hotmail.com"
                 className="text-purple-600 hover:underline font-medium"
