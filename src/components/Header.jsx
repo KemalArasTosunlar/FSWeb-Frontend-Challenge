@@ -1,18 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useApp } from '../context/AppContext';
+import { sectionLabels } from '../data/content';
 
 export const Header = () => {
   const { language, setLanguage, theme, setTheme } = useApp();
-
-  useEffect(() => {
-    
-    if (window.location.hash) {
-      window.history.pushState('', document.title, window.location.pathname);
-    }
-
-    
-    window.scrollTo(0, 0);
-  }, []); 
 
   return (
     <header className="py-8 px-6">
@@ -38,7 +29,7 @@ export const Header = () => {
           {language === 'en' ? "TÜRKÇE'YE GEÇ" : 'SWITCH TO ENGLISH'}
         </button>
       </div>
-
+      
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
           <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/50 rounded-full flex items-center justify-center">
@@ -47,16 +38,10 @@ export const Header = () => {
         </div>
         <div className="flex items-center gap-8">
           <nav className="flex gap-8">
-            <a href="#skills" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
-              {language === 'en' ? 'Skills' : 'Yetenekler'}
-            </a>
-            <a href="#projects" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
-              {language === 'en' ? 'Projects' : 'Projeler'}
-            </a>
+            <a href="#skills" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">{language === 'en' ? 'Skills' : 'Yetenekler'}</a>
+            <a href="#projects" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">{language === 'en' ? 'Projects' : 'Projeler'}</a>
           </nav>
-          <button className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">
-            {language === 'en' ? 'Hire Me' : 'Beni İşe Al'}
-          </button>
+          <a href="mailto:kemaltosunlar@hotmail.com" className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">{language === 'en' ? 'Hire Me' : 'Beni İşe Al'}</a>
         </div>
       </div>
     </header>
