@@ -1,41 +1,22 @@
-import React, { useEffect } from 'react';
-import { AppProvider, useApp } from './context/AppContext';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { Skills } from './components/Skills';
-import { Profile } from './components/Profile';
-import { Projects } from './components/Projects';
-import { Contact } from './components/Contact';
+import React, { createContext, useContext, useState } from 'react';
 
-const AppContent = () => {
-  const { theme } = useApp();
+const AppContext = createContext();
 
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', theme === 'dark');
-  }, [theme]);
+export const AppProvider = ({ children }) => {
+  const [language, setLanguage] = useState('en');
+  const [theme, setTheme] = useState('light');
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
-      <div className="max-w-6xl mx-auto">
-        <Header />
-        <main>
-          <Hero />
-          <Skills />
-          <Profile />
-          <Projects />
-          <Contact />
-        </main>
-      </div>
-    </div>
+    <AppContext.Provider value={{ language, setLanguage, theme, setTheme }}>
+      {children}
+    </AppContext.Provider>
   );
 };
 
-function App() {
-  return (
-    <AppProvider>
-      <AppContent />
-    </AppProvider>
-  );
-}
-
-export default App;
+export const useApp = () => {
+  const context = useContext(AppContext);
+  if (context === undefined) {
+    throw new Error('useApp must be used within an AppProvider');
+  }
+  return context;
+};
