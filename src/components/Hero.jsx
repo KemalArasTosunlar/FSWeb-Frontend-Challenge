@@ -25,7 +25,7 @@ export const Hero = () => {
             {language === 'en' ? 'Hire me' : 'İşe Al'}
           </a>
           <a 
-            href="https://github.com" 
+            href="https://github.com/KemalArasTosunlar" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 hover:border-gray-400 transition-colors"
@@ -34,7 +34,7 @@ export const Hero = () => {
             <span>Github</span>
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/kemal-tosunlar-47327270/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 hover:border-gray-400 transition-colors"

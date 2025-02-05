@@ -17,10 +17,10 @@ export const Contact = () => {
             <div className="flex items-center gap-2">
               <span className="text-yellow-400">✉</span>
               <a
-                href="mailto:almilasucode@gmail.com"
+                href="mailto:kemaltosunlar@hotmail.com"
                 className="text-purple-600 hover:underline font-medium"
               >
-                almilasucode@gmail.com
+                kemaltosunlar@hotmail.com
               </a>
             </div>
             <div className="flex items-center gap-6">
@@ -31,7 +31,7 @@ export const Contact = () => {
                 {language === 'en' ? 'Personal Blog' : 'Kişisel Blog'}
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/KemalArasTosunlar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-500 hover:text-green-600"
@@ -39,7 +39,7 @@ export const Contact = () => {
                 Github
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/kemal-tosunlar-47327270/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-600"

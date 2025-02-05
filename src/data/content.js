@@ -29,12 +29,12 @@ export const profile = {
     tr: 'İzmir'
   },
   education: {
-    en: 'International Relations',
-    tr: 'Uluslararası İlişkiler'
+    en: 'Abant Izzet Baysal University | International Relationships',
+    tr: 'Abanat İzzet Baysal Üniversitesi |Uluslararası İlişkiler'
   },
   workExperience: {
-    en: 'Senior Developer at XYZ Tech (2018-Present)',
-    tr: 'XYZ Tech Kıdemli Geliştirici (2018-Günümüz)'
+    en: 'Freelance Wep Developer (2018-Present)',
+    tr: 'Freelance Web Geliştirici (2018-Günümüz)'
   },
   about: {
     en: [
@@ -51,38 +51,38 @@ export const profile = {
 export const projects = [
   {
     id: 1,
-    title: 'Workintech',
+    title: 'Workintech Pizza Project',
     description: {
-      en: 'A comprehensive learning platform built with React and Node.js.',
-      tr: 'React ve Node.js ile geliştirilmiş kapsamlı bir öğrenme platformu.'
+      en: 'A food ordering website built with React and Node.js.',
+      tr: 'React ve Node.js ile geliştirilmiş yemek sipariş sitesi.'
     },
     image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
     tags: ['React', 'Node', 'API'],
-    demoUrl: '#',
-    githubUrl: 'https://github.com/yourusername/workintech' // Add GitHub URL
+    demoUrl: 'https://s8-challamge-pizza-kemal.vercel.app/',
+    githubUrl: 'https://github.com/KemalArasTosunlar/s8-challamge-pizza-kemal' 
   },
   {
     id: 2,
-    title: 'Random Jokes',
+    title: 'Movie Database',
     description: {
-      en: 'Fun project that generates random jokes using external APIs.',
-      tr: 'Harici API\'ler kullanarak rastgele şakalar üreten eğlenceli proje.'
+      en: 'Allows users to add their favorite movies, delete them. Also added dark mode.',
+      tr: 'Kullanıcılara favori filmlerini ekleme ve silme imkanı sunan bir proje. Dark mode özelliğide bulunmakta'
     },
     image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1',
-    tags: ['React', 'API', 'Jest'],
-    demoUrl: '#',
-    githubUrl: 'https://github.com/yourusername/random-jokes' // Add GitHub URL
+    tags: ['React', 'API', 'Axios'],
+    demoUrl: 'https://movie-database-v3.vercel.app/movies',
+    githubUrl: 'https://github.com/KemalArasTosunlar/movie-database-v3' 
   },
   {
     id: 3,
-    title: 'Journey',
+    title: 'WitFlix',
     description: {
-      en: 'Travel planning application with interactive maps.',
-      tr: 'Etkileşimli haritalar içeren seyahat planlama uygulaması.'
+      en: 'Netflix like movie streaming webiste.',
+      tr: 'Netflix benzeri film izleme sitesi.'
     },
     image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b',
-    tags: ['React', 'Maps', 'API'],
+    tags: ['HTML', 'CSS', 'JavaScript'],
     demoUrl: '#',
-    githubUrl: 'https://github.com/yourusername/journey' // Add GitHub URL
+    githubUrl: 'https://github.com/KemalArasTosunlar/witflix' 
   }
 ];
