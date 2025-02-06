@@ -33,7 +33,7 @@ export const Header = () => {
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
           <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/50 rounded-full flex items-center justify-center">
-            <span className="text-purple-600 dark:text-purple-400 text-xl font-semibold">A</span>
+            <span className="text-purple-600 dark:text-purple-400 text-xl font-semibold">K</span>
           </div>
         </div>
         <div className="flex items-center gap-8">
