@@ -23,7 +23,7 @@ export const Hero = () => {
             href="#" 
             className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700"
           >
-            {language === 'en' ? 'Hire me' : 'Beni İşe Al'}
+            {language === 'en' ? 'Hire me' : 'İletişim'}
           </a>
           <a 
             href="https://github.com/KemalArasTosunlar" 

@@ -41,7 +41,7 @@ export const Header = () => {
             <a href="#skills" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">{language === 'en' ? 'Skills' : 'Yetenekler'}</a>
             <a href="#projects" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">{language === 'en' ? 'Projects' : 'Projeler'}</a>
           </nav>
-          <a href="mailto:kemaltosunlar@hotmail.com" className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">{language === 'en' ? 'Hire Me' : 'Beni İşe Al'}</a>
+          <a href="mailto:kemaltosunlar@hotmail.com" className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">{language === 'en' ? 'Hire Me' : 'İletişim'}</a>
         </div>
       </div>
     </header>
